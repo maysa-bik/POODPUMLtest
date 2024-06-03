@@ -8,7 +8,9 @@ find_package(SFML 2.6.1 COMPONENTS graphics audio REQUIRED)
 
 include_directories(${SFML_INCLUDE_DIR})
 
-add_executable(towerDefense main.cpp)
+add_executable(towerDefense 
+        src/main.cpp
+)
 
 target_link_libraries(towerDefense sfml-graphics sfml-audio)
 

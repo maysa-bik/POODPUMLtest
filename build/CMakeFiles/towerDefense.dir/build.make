@@ -68,29 +68,29 @@ include CMakeFiles/towerDefense.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/towerDefense.dir/flags.make
 
-CMakeFiles/towerDefense.dir/main.cpp.obj: CMakeFiles/towerDefense.dir/flags.make
-CMakeFiles/towerDefense.dir/main.cpp.obj: CMakeFiles/towerDefense.dir/includes_CXX.rsp
-CMakeFiles/towerDefense.dir/main.cpp.obj: C:/Users/33753/OneDrive/Bureau/POODPUMLtest/main.cpp
-CMakeFiles/towerDefense.dir/main.cpp.obj: CMakeFiles/towerDefense.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\33753\OneDrive\Bureau\POODPUMLtest\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/towerDefense.dir/main.cpp.obj"
-	C:\Users\33753\DOWNLO~1\WINLIB~1.0-R\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/towerDefense.dir/main.cpp.obj -MF CMakeFiles\towerDefense.dir\main.cpp.obj.d -o CMakeFiles\towerDefense.dir\main.cpp.obj -c C:\Users\33753\OneDrive\Bureau\POODPUMLtest\main.cpp
+CMakeFiles/towerDefense.dir/src/main.cpp.obj: CMakeFiles/towerDefense.dir/flags.make
+CMakeFiles/towerDefense.dir/src/main.cpp.obj: CMakeFiles/towerDefense.dir/includes_CXX.rsp
+CMakeFiles/towerDefense.dir/src/main.cpp.obj: C:/Users/33753/OneDrive/Bureau/POODPUMLtest/src/main.cpp
+CMakeFiles/towerDefense.dir/src/main.cpp.obj: CMakeFiles/towerDefense.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\33753\OneDrive\Bureau\POODPUMLtest\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/towerDefense.dir/src/main.cpp.obj"
+	C:\Users\33753\DOWNLO~1\WINLIB~1.0-R\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/towerDefense.dir/src/main.cpp.obj -MF CMakeFiles\towerDefense.dir\src\main.cpp.obj.d -o CMakeFiles\towerDefense.dir\src\main.cpp.obj -c C:\Users\33753\OneDrive\Bureau\POODPUMLtest\src\main.cpp
 
-CMakeFiles/towerDefense.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/towerDefense.dir/main.cpp.i"
-	C:\Users\33753\DOWNLO~1\WINLIB~1.0-R\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\33753\OneDrive\Bureau\POODPUMLtest\main.cpp > CMakeFiles\towerDefense.dir\main.cpp.i
+CMakeFiles/towerDefense.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/towerDefense.dir/src/main.cpp.i"
+	C:\Users\33753\DOWNLO~1\WINLIB~1.0-R\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\33753\OneDrive\Bureau\POODPUMLtest\src\main.cpp > CMakeFiles\towerDefense.dir\src\main.cpp.i
 
-CMakeFiles/towerDefense.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/towerDefense.dir/main.cpp.s"
-	C:\Users\33753\DOWNLO~1\WINLIB~1.0-R\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\33753\OneDrive\Bureau\POODPUMLtest\main.cpp -o CMakeFiles\towerDefense.dir\main.cpp.s
+CMakeFiles/towerDefense.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/towerDefense.dir/src/main.cpp.s"
+	C:\Users\33753\DOWNLO~1\WINLIB~1.0-R\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\33753\OneDrive\Bureau\POODPUMLtest\src\main.cpp -o CMakeFiles\towerDefense.dir\src\main.cpp.s
 
 # Object files for target towerDefense
 towerDefense_OBJECTS = \
-"CMakeFiles/towerDefense.dir/main.cpp.obj"
+"CMakeFiles/towerDefense.dir/src/main.cpp.obj"
 
 # External object files for target towerDefense
 towerDefense_EXTERNAL_OBJECTS =
 
-towerDefense.exe: CMakeFiles/towerDefense.dir/main.cpp.obj
+towerDefense.exe: CMakeFiles/towerDefense.dir/src/main.cpp.obj
 towerDefense.exe: CMakeFiles/towerDefense.dir/build.make
 towerDefense.exe: C:/Program\ Files/SFML-2.6.1-windows-gcc-13.1.0-mingw-64-bit/SFML-2.6.1/lib/libsfml-graphics-d.a
 towerDefense.exe: C:/Program\ Files/SFML-2.6.1-windows-gcc-13.1.0-mingw-64-bit/SFML-2.6.1/lib/libsfml-audio-d.a
