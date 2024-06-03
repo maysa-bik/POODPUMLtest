@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Users/33753/OneDrive/Bureau/POODPUMLtest/build",
+  "command": "C:\\Users\\33753\\DOWNLO~1\\WINLIB~1.0-R\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/towerDefense.dir/includes_CXX.rsp -g -o CMakeFiles\\towerDefense.dir\\main.cpp.obj -c C:\\Users\\33753\\OneDrive\\Bureau\\POODPUMLtest\\main.cpp",
+  "file": "C:/Users/33753/OneDrive/Bureau/POODPUMLtest/main.cpp",
+  "output": "CMakeFiles/towerDefense.dir/main.cpp.obj"
+}
+]
