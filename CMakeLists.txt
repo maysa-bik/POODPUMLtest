@@ -7,9 +7,12 @@ set(SFML_DIR "C:/Program Files/SFML-2.6.1-windows-gcc-13.1.0-mingw-64-bit/SFML-2
 # Rechercher et inclure SFML
 find_package(SFML 2.6.1 COMPONENTS graphics audio REQUIRED)
 
+include_directories(${SFML_INCLUDE_DIR})
+
 # Ajouter les fichiers sources
 add_executable(towerDefense 
         src/main.cpp
+        src/Menu.cpp
 )
 
 # Ajouter les répertoires d'inclusion

@@ -1,6 +1,7 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include <filesystem> // C++17
+#include "Menu.hpp"
 
 int main()
 {
@@ -12,6 +13,7 @@ int main()
 
     // Utilisez un chemin absolu pour tester
     std::string imagePath = "C:/Users/33753/OneDrive/Bureau/POODPUMLtest/assets/images/Kingdom-rush-frontiers-front-jaquette-upscale.jpg";
+    std::string fontPath = "C:/Users/33753/OneDrive/Bureau/POODPUMLtest/assets/font/Coffee Spark.ttf";
 
     // Chargez la texture de l'image
     sf::Texture backgroundTexture;
@@ -30,6 +32,9 @@ int main()
         window.getSize().y / backgroundSprite.getLocalBounds().height
     );
 
+    // Créez le menu
+    Menu menu(fontPath);
+
     while (window.isOpen())
     {
         sf::Event event;
@@ -37,11 +42,18 @@ int main()
         {
             if (event.type == sf::Event::Closed)
                 window.close();
-        }
+            if (event.type == sf::Event::MouseButtonReleased)
+            {
+                sf::Vector2f mousePos = window.mapPixelToCoords(sf::Mouse::getPosition(window));
+                menu.handleMouseClick(mousePos, window);
+            }
+        }    
+        
 
         window.clear();
         // Dessinez le sprite (image de fond) avant tout autre dessin
         window.draw(backgroundSprite);
+        menu.draw(window);
         window.display();
     }
 
