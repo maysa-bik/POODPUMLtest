@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/towerDefense.dir/src/Menu.cpp.obj"
   "CMakeFiles/towerDefense.dir/src/Menu.cpp.obj.d"
+  "CMakeFiles/towerDefense.dir/src/MenuButton.cpp.obj"
+  "CMakeFiles/towerDefense.dir/src/MenuButton.cpp.obj.d"
   "CMakeFiles/towerDefense.dir/src/main.cpp.obj"
   "CMakeFiles/towerDefense.dir/src/main.cpp.obj.d"
   "libtowerDefense.dll.a"

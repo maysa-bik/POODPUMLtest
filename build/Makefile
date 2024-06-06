@@ -546,6 +546,30 @@ src/Menu.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\towerDefense.dir\build.make CMakeFiles/towerDefense.dir/src/Menu.cpp.s
 .PHONY : src/Menu.cpp.s
 
+src/MenuButton.obj: src/MenuButton.cpp.obj
+.PHONY : src/MenuButton.obj
+
+# target to build an object file
+src/MenuButton.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\towerDefense.dir\build.make CMakeFiles/towerDefense.dir/src/MenuButton.cpp.obj
+.PHONY : src/MenuButton.cpp.obj
+
+src/MenuButton.i: src/MenuButton.cpp.i
+.PHONY : src/MenuButton.i
+
+# target to preprocess a source file
+src/MenuButton.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\towerDefense.dir\build.make CMakeFiles/towerDefense.dir/src/MenuButton.cpp.i
+.PHONY : src/MenuButton.cpp.i
+
+src/MenuButton.s: src/MenuButton.cpp.s
+.PHONY : src/MenuButton.s
+
+# target to generate assembly for a file
+src/MenuButton.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\towerDefense.dir\build.make CMakeFiles/towerDefense.dir/src/MenuButton.cpp.s
+.PHONY : src/MenuButton.cpp.s
+
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -613,6 +637,9 @@ help:
 	@echo ... src/Menu.obj
 	@echo ... src/Menu.i
 	@echo ... src/Menu.s
+	@echo ... src/MenuButton.obj
+	@echo ... src/MenuButton.i
+	@echo ... src/MenuButton.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

@@ -13,6 +13,7 @@ include_directories(${SFML_INCLUDE_DIR})
 add_executable(towerDefense 
         src/main.cpp
         src/Menu.cpp
+        src/MenuButton.cpp
 )
 
 # Ajouter les répertoires d'inclusion

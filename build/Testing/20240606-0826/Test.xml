@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Site BuildName="Win32-mingw32-make"
-	BuildStamp="20240605-0833-Experimental"
+	BuildStamp="20240606-0826-Experimental"
 	Name="LAPTOP-E35DG5OV"
 	Generator="ctest-3.29.3"
 	CompilerName="C:/Users/33753/Downloads/winlibs-x86_64-posix-seh-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5 (1)/mingw64/bin/g++.exe"
@@ -18,17 +18,17 @@
 	ProcessorCacheSize="-1"
 	NumberOfLogicalCPU="8"
 	NumberOfPhysicalCPU="4"
-	TotalVirtualMemory="18259"
+	TotalVirtualMemory="18003"
 	TotalPhysicalMemory="7977"
 	LogicalProcessorsPerPhysical="2"
 	ProcessorClockFrequency="2304"
 	>
 	<Testing>
-		<StartDateTime>Jun 05 16:20 Paris, Madrid (heure d[NON-UTF-8-BYTE-0x92][NON-UTF-8-BYTE-0xE9]t[NON-UTF-8-BYTE-0xE9])</StartDateTime>
-		<StartTestTime>1717597212</StartTestTime>
+		<StartDateTime>Jun 06 10:42 Paris, Madrid (heure d[NON-UTF-8-BYTE-0x92][NON-UTF-8-BYTE-0xE9]t[NON-UTF-8-BYTE-0xE9])</StartDateTime>
+		<StartTestTime>1717663321</StartTestTime>
 		<TestList/>
-		<EndDateTime>Jun 05 16:20 Paris, Madrid (heure d[NON-UTF-8-BYTE-0x92][NON-UTF-8-BYTE-0xE9]t[NON-UTF-8-BYTE-0xE9])</EndDateTime>
-		<EndTestTime>1717597212</EndTestTime>
+		<EndDateTime>Jun 06 10:42 Paris, Madrid (heure d[NON-UTF-8-BYTE-0x92][NON-UTF-8-BYTE-0xE9]t[NON-UTF-8-BYTE-0xE9])</EndDateTime>
+		<EndTestTime>1717663321</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>
