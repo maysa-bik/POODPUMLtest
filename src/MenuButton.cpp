@@ -3,7 +3,10 @@
 MenuButton::MenuButton(sf::Font& font, const std::string& buttonText, sf::Vector2f buttonSize, sf::Vector2f buttonPosition) {
     shape.setSize(buttonSize);
     shape.setPosition(buttonPosition);
-    shape.setFillColor(sf::Color::Transparent); // Couleur du bouton, maintenant transparent
+    defaultColor = sf::Color::Black;
+    hoverColor = sf::Color::Black;
+    pressedColor = sf::Color::Magenta;
+    shape.setFillColor(defaultColor); // Couleur par défaut du bouton
 
     text.setFont(font);
     text.setString(buttonText);
@@ -15,7 +18,7 @@ MenuButton::MenuButton(sf::Font& font, const std::string& buttonText, sf::Vector
 }
 
 void MenuButton::draw(sf::RenderWindow& window) {
-    // window.draw(shape); // Ne pas dessiner le fond
+    window.draw(shape);
     window.draw(text);
 }
 
@@ -26,6 +29,65 @@ bool MenuButton::isMouseOver(sf::Vector2f mousePosition) {
 void MenuButton::setFillColor(sf::Color color) {
     shape.setFillColor(color);
 }
+
+void MenuButton::setDefaultColor(sf::Color color) {
+    defaultColor = color;
+    shape.setFillColor(defaultColor);
+}
+
+void MenuButton::setHoverColor(sf::Color color) {
+    hoverColor = color;
+}
+
+void MenuButton::setPressedColor(sf::Color color) {
+    pressedColor = color;
+}
+
+void MenuButton::update(sf::Vector2f mousePosition, bool isPressed) {
+    if (isMouseOver(mousePosition)) {
+        if (isPressed) {
+            shape.setFillColor(pressedColor);
+        } else {
+            shape.setFillColor(hoverColor);
+        }
+    } else {
+        shape.setFillColor(defaultColor);
+    }
+}
+
+void MenuButton::handleEvent(const sf::Event& event, sf::RenderWindow& window) {
+    if (event.type == sf::Event::MouseMoved) {
+        sf::Vector2f mousePos = window.mapPixelToCoords(sf::Mouse::getPosition(window));
+        if (isMouseOver(mousePos)) {
+            shape.setFillColor(hoverColor);
+        } else {
+            shape.setFillColor(defaultColor);
+        }
+    } else if (event.type == sf::Event::MouseButtonPressed) {
+        if (event.mouseButton.button == sf::Mouse::Left) {
+            sf::Vector2f mousePos = window.mapPixelToCoords(sf::Mouse::getPosition(window));
+            if (isMouseOver(mousePos)) {
+                shape.setFillColor(pressedColor);
+                isPressed = true;
+            }
+        }
+    } else if (event.type == sf::Event::MouseButtonReleased) {
+        if (event.mouseButton.button == sf::Mouse::Left) {
+            sf::Vector2f mousePos = window.mapPixelToCoords(sf::Mouse::getPosition(window));
+            if (isMouseOver(mousePos)) {
+                shape.setFillColor(hoverColor);
+            } else {
+                shape.setFillColor(defaultColor);
+            }
+            isPressed = false;
+        }
+    }
+}
+
+
+
+
+
 
 
 
