@@ -1,7 +1,14 @@
+// main.cpp
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include <filesystem>
 #include "Menu.hpp"
+#include "Game.hpp"
+
+enum class AppState {
+    Menu,
+    Game
+};
 
 int main() {
     std::cout << "Hello" << std::endl;
@@ -26,24 +33,35 @@ int main() {
     );
 
     Menu menu(fontPath);
+    AppState appState = AppState::Menu;
 
     while (window.isOpen()) {
         sf::Event event;
         while (window.pollEvent(event)) {
             if (event.type == sf::Event::Closed)
                 window.close();
-            menu.handleEvent(event, window);
-            if (event.type == sf::Event::MouseButtonReleased) {
-                sf::Vector2f mousePos = window.mapPixelToCoords(sf::Mouse::getPosition(window));
-                menu.handleMouseClick(mousePos, window);
+
+            if (appState == AppState::Menu) {
+                menu.handleEvent(event, window);
+                if (event.type == sf::Event::MouseButtonReleased) {
+                    sf::Vector2f mousePos = window.mapPixelToCoords(sf::Mouse::getPosition(window));
+                    if (menu.handleMouseClick(mousePos, window) == "Start") {
+                        appState = AppState::Game;
+                    }
+                }
             }
         }
 
         window.clear();
-        window.draw(backgroundSprite);
-        menu.draw(window);
+        if (appState == AppState::Menu) {
+            window.draw(backgroundSprite);
+            menu.draw(window);
+        } else if (appState == AppState::Game) {
+            runGame(window);
+        }
         window.display();
     }
 
     return 0;
 }
+

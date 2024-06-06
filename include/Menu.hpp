@@ -15,9 +15,9 @@ public:
 
     void draw(sf::RenderWindow& window);
     void handleEvent(const sf::Event& event, sf::RenderWindow& window);
-    void handleMouseClick(sf::Vector2f mousePos, sf::RenderWindow& window);
-    void update(sf::Vector2f mousePosition, bool isPressed);
+    std::string handleMouseClick(sf::Vector2f mousePos, sf::RenderWindow& window);
 };
+
 
 
 

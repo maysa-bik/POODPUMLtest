@@ -1,5 +1,9 @@
 cmake_minimum_required(VERSION 3.10)
-project(towerDefense VERSION 0.1.0 LANGUAGES C CXX)
+# Set the project name
+project(TowerDefense)
+# Set the C++ standard
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # Définir le chemin vers SFML
 set(SFML_DIR "C:/Program Files/SFML-2.6.1-windows-gcc-13.1.0-mingw-64-bit/SFML-2.6.1/lib/cmake/SFML")
@@ -15,6 +19,7 @@ add_executable(towerDefense
         src/main.cpp
         src/Menu.cpp
         src/MenuButton.cpp
+        src/Game.cpp
 )
 
 # Ajouter les répertoires d'inclusion

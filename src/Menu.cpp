@@ -28,21 +28,20 @@ void Menu::handleEvent(const sf::Event& event, sf::RenderWindow& window) {
     quitButton->handleEvent(event, window);
 }
 
-void Menu::handleMouseClick(sf::Vector2f mousePos, sf::RenderWindow& window) {
+std::string Menu::handleMouseClick(sf::Vector2f mousePos, sf::RenderWindow& window) {
     if (startButton->isMouseOver(mousePos)) {
         std::cout << "Start button clicked!" << std::endl;
-        // Insérez ici le code pour commencer le jeu
-    } else if (optionsButton->isMouseOver(mousePos)) {
+        return "Start";
+    }
+    else if (optionsButton->isMouseOver(mousePos)) {
         std::cout << "Options button clicked!" << std::endl;
-        // Insérez ici le code pour afficher les options
-    } else if (quitButton->isMouseOver(mousePos)) {
+        return "Options";
+    }
+    else if (quitButton->isMouseOver(mousePos)) {
         std::cout << "Quit button clicked!" << std::endl;
         window.close();
+        return "Quit";
     }
+    return "";
 }
 
-void Menu::update(sf::Vector2f mousePosition, bool isPressed) {
-    startButton->update(mousePosition, isPressed);
-    optionsButton->update(mousePosition, isPressed);
-    quitButton->update(mousePosition, isPressed);
-}
