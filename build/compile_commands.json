@@ -1,20 +1,26 @@
 [
 {
   "directory": "C:/Users/33753/OneDrive/Bureau/POODPUMLtest/build",
-  "command": "C:\\Users\\33753\\DOWNLO~1\\WINLIB~1.0-R\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/towerDefense.dir/includes_CXX.rsp -g -o CMakeFiles\\towerDefense.dir\\src\\main.cpp.obj -c C:\\Users\\33753\\OneDrive\\Bureau\\POODPUMLtest\\src\\main.cpp",
+  "command": "C:\\Users\\33753\\DOWNLO~1\\WINLIB~1.0-R\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/towerDefense.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\towerDefense.dir\\src\\main.cpp.obj -c C:\\Users\\33753\\OneDrive\\Bureau\\POODPUMLtest\\src\\main.cpp",
   "file": "C:/Users/33753/OneDrive/Bureau/POODPUMLtest/src/main.cpp",
   "output": "CMakeFiles/towerDefense.dir/src/main.cpp.obj"
 },
 {
   "directory": "C:/Users/33753/OneDrive/Bureau/POODPUMLtest/build",
-  "command": "C:\\Users\\33753\\DOWNLO~1\\WINLIB~1.0-R\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/towerDefense.dir/includes_CXX.rsp -g -o CMakeFiles\\towerDefense.dir\\src\\Menu.cpp.obj -c C:\\Users\\33753\\OneDrive\\Bureau\\POODPUMLtest\\src\\Menu.cpp",
+  "command": "C:\\Users\\33753\\DOWNLO~1\\WINLIB~1.0-R\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/towerDefense.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\towerDefense.dir\\src\\Menu.cpp.obj -c C:\\Users\\33753\\OneDrive\\Bureau\\POODPUMLtest\\src\\Menu.cpp",
   "file": "C:/Users/33753/OneDrive/Bureau/POODPUMLtest/src/Menu.cpp",
   "output": "CMakeFiles/towerDefense.dir/src/Menu.cpp.obj"
 },
 {
   "directory": "C:/Users/33753/OneDrive/Bureau/POODPUMLtest/build",
-  "command": "C:\\Users\\33753\\DOWNLO~1\\WINLIB~1.0-R\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/towerDefense.dir/includes_CXX.rsp -g -o CMakeFiles\\towerDefense.dir\\src\\MenuButton.cpp.obj -c C:\\Users\\33753\\OneDrive\\Bureau\\POODPUMLtest\\src\\MenuButton.cpp",
+  "command": "C:\\Users\\33753\\DOWNLO~1\\WINLIB~1.0-R\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/towerDefense.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\towerDefense.dir\\src\\MenuButton.cpp.obj -c C:\\Users\\33753\\OneDrive\\Bureau\\POODPUMLtest\\src\\MenuButton.cpp",
   "file": "C:/Users/33753/OneDrive/Bureau/POODPUMLtest/src/MenuButton.cpp",
   "output": "CMakeFiles/towerDefense.dir/src/MenuButton.cpp.obj"
+},
+{
+  "directory": "C:/Users/33753/OneDrive/Bureau/POODPUMLtest/build",
+  "command": "C:\\Users\\33753\\DOWNLO~1\\WINLIB~1.0-R\\mingw64\\bin\\G__~1.EXE  @CMakeFiles/towerDefense.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\towerDefense.dir\\src\\Game.cpp.obj -c C:\\Users\\33753\\OneDrive\\Bureau\\POODPUMLtest\\src\\Game.cpp",
+  "file": "C:/Users/33753/OneDrive/Bureau/POODPUMLtest/src/Game.cpp",
+  "output": "CMakeFiles/towerDefense.dir/src/Game.cpp.obj"
 }
 ]

@@ -159,7 +159,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=towerDefense
+CMAKE_PROJECT_NAME:STATIC=TowerDefense
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=0.1.0
@@ -319,6 +319,15 @@ SFML_DOC_DIR:PATH=SFML_DOC_DIR-NOTFOUND
 
 //Name of the computer/site where compile is being run
 SITE:STRING=LAPTOP-E35DG5OV
+
+//Value Computed by CMake
+TowerDefense_BINARY_DIR:STATIC=C:/Users/33753/OneDrive/Bureau/POODPUMLtest/build
+
+//Value Computed by CMake
+TowerDefense_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+TowerDefense_SOURCE_DIR:STATIC=C:/Users/33753/OneDrive/Bureau/POODPUMLtest
 
 //Value Computed by CMake
 towerDefense_BINARY_DIR:STATIC=C:/Users/33753/OneDrive/Bureau/POODPUMLtest/build
